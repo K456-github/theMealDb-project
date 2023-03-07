@@ -2,13 +2,15 @@ import React from 'react'
 import {BiSearch} from "react-icons/bi"
 import "./MealCard.css"
 
-const MealCard = ({name,image}) => {
+const MealCard = ({name,image,id}) => {
   return (
-    <div className='relative parent'>
-      <img className='h-[300px] object-cover rounded-lg' src={image} alt="" />
-      <p className='icon bg-pink-500 flex items-center justify-center h-12 w-12 absolute top-[45] left-[45]'>
-        <BiSearch className='text-3xl text-white'/>
-      </p>
+    <div className='relative parent p-3 cursor-pointer'>
+      <img className='h-[300px] object-cover image rounded-lg' src={image} alt="" />
+      <Link to={`/detail/${id}`}>
+      <span className='icon bg-[#ff8896] rounded-[50%] flex align-middle items-center justify-center h-10 w-10 absolute top-[45%] left-[45%] animate-bounce'>
+        <BiSearch className='text-3xl text-white '/>
+      </span>
+      </Link>
     </div>
   )
 }

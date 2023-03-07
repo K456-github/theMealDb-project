@@ -2,11 +2,12 @@
     z-index: -1;
 }
 .parent{
-    transition: all 2s;
+    transition: all 1s;
 }
 .parent:hover .icon{
     z-index: 1;
 }
 .parent:hover .image{
     opacity: 0.7;
+    
 }
