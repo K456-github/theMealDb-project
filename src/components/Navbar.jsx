@@ -4,7 +4,7 @@ import {BsFillSearchHeartFill} from "react-icons/bs"
 
 const Navbar = () => {
   return (
-    <div className='flex justify-around p-7 rounded-lg shadow items-center bg-rose-100'>
+    <div className='flex justify-around p-7 rounded-lg shadow items-center bg-rose-100 sticky'>
       <div className="flex justify-center items-center">
       <MdOutlineSoupKitchen className='text-3xl '/>
       <p className='text-[#b5777f] text-lg font-semibold cursor-pointer'>Ohaiyo!</p>
