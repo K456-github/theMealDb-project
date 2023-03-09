@@ -14,7 +14,7 @@ useEffect(()=>{
         setMeals(meals)
     }
   return (
-    <div className='flex flex-wrap gap-2 justify-center py-10'>
+    <div className='flex flex-wrap gap-2 justify-center py-10 container'>
       {meals.map(meal =>{
         return(
             <MealCard key={meal.idMeal} name={meal.strMeal} image={meal.strMealThumb} id={meal.idMeal}/>
